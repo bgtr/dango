@@ -2,25 +2,37 @@ define('view/detail', [
     'lungo',
     'Backbone',
     'collection/blogs',
-    'util/cache'
-], function (lungo, Backbone, Blogs, cache) {
+    'util/cache',
+    'util/translator'
+], function (lungo, Backbone, Blogs, cache, translator) {
 
     var viewDetail = new function() {
 
         var view = this;
 
         view.initialize = function() {
-            blogs = new Blogs();
-            blogs.add([{id:1, body:"あああああああああああああ"},
-                {id:2, body:"いいいいいいいいいいいいいいいいいいい"}]);
-
             lungo.dom('#detail').on('load', function(event){
 
             });
         }
 
         view.loadHandler = function(e){
-            lung.dom($(e.target).id).title("aa");
+
+            var blog = cache.blogs.get((e.target.id).replace("detail_1_", "")).toJSON();
+
+//            lungo.dom("#" + e.target.id).title();
+            Lungo.View.Article.title(blog.en.title);
+
+            $(lungo.dom("#" + e.target.id + " header nav a.button")).on('tap', function(e){
+                if ($(e.target).text().indexOf("▶", 0) >= 0) {
+                    translator.play(blog.en.body);
+                    $(e.target).text(" ‖ ");
+                } else {
+                    translator.pause();
+                    $(e.target).text(" ▶ ");
+                }
+            });
+
         }
 
         return view;

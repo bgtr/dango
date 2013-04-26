@@ -1,14 +1,29 @@
 <section id="detail_1_{{id}}" data-transition="">
     <header data-title="aaa">
         <nav class="left">
-            <a href="#back" data-router="section" data-icon="left">Section</a>
+            <a href="#back" data-router="section" class="icon left"></a>
         </nav>
 
         <nav class="right">
             <a href="#" class="button"> ▶ </a>
         </nav>
     </header>
-    <article id="post-1" class="active">
-        {{body}}
+    <article class="active">
+        <div style="display:block;width:50%;float:left;">
+            <p>
+                <strong>{{ja_JP.title}}</strong>
+            </p>
+            <p>
+                {{ja_JP.body}}
+            </p>
+        </div>
+        <div style="display:block;width:50%;float:left;">
+            <p>
+                <strong>{{en.title}}</strong>
+            </p>
+            <p>
+                {{en.body}}
+            </p>
+        </div>
     </article>
 </section>
