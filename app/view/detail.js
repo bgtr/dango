@@ -4,7 +4,7 @@ define('view/detail', [
     'collection/blogs',
     'util/cache',
     'util/translator'
-], function (lungo, Backbone, Blogs, cache, translator) {
+], function (lungo, Backbone, Blogs, cache, Translator) {
 
     var viewDetail = new function() {
 
@@ -22,6 +22,8 @@ define('view/detail', [
 
 //            lungo.dom("#" + e.target.id).title();
             Lungo.View.Article.title(blog.en.title);
+
+            var translator = new Translator();
 
             $(lungo.dom("#" + e.target.id + " header nav a.button")).on('tap', function(e){
                 if ($(e.target).text().indexOf("▶", 0) >= 0) {

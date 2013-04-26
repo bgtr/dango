@@ -1,5 +1,6 @@
 define('view/main', [
     'lungo',
+    'jquery',
     'underscore',
     'Backbone',
     'mustache',
@@ -8,13 +9,58 @@ define('view/main', [
     'text!template/detail.html',
     'view/detail',
     'util/cache'
-], function (lungo, _, Backbone, mustache, Blogs, mainArticleTmpl, detailArticleTmpl, viewDetail, cache) {
+], function (lungo, $, _, Backbone, mustache, Blogs, mainArticleTmpl, detailArticleTmpl, viewDetail, cache) {
 
     var viewMain = new function() {
 
         var view = this;
 
         view.initialize = function() {
+            blogs = new Blogs();
+
+            var loading = function () {
+                $(lungo.dom('#main-article')).html('<div class="loading black"><span class="top"></span><span class="right"></span><span class="bottom"></span><span class="left"></span></div>');
+            }
+
+            var update = function() {
+
+                $.get("http://54.248.103.103/", function(json){
+
+                    console.log(json);
+                    for (var i = 0; i < json.length; i++) {
+                        json[i].id = _.uniqueId('blog_');
+                        blogs.add(json[i]);
+                    }
+
+                    var output = mustache.render(mainArticleTmpl, {blogs:blogs.toJSON()});
+                    $(lungo.dom('#main-article')).html(output);
+
+                    blogs.each(function(blog){
+                        var output = mustache.render(detailArticleTmpl, blog.toJSON());
+                        $("body").append(output);
+
+                        lungo.dom("#detail_1_" + blog.id).on('load', function(e){
+                            viewDetail.loadHandler(e);
+                        });
+                    });
+
+                    cache.blogs = blogs;
+
+                }, "json");
+
+            }
+            loading();
+            update();
+
+
+
+            $("#refresh").on('tap', function(e){
+                loading();
+                update();
+                console.log('refresh');
+            });
+
+ /*
             blogs = new Blogs();
             blogs.add([
                 {
@@ -107,20 +153,7 @@ define('view/main', [
                     }
                 }
             ]);
-
-            var output = mustache.render(mainArticleTmpl, {blogs:blogs.toJSON()});
-            $(lungo.dom('#main-article')).html(output);
-
-            blogs.each(function(blog){
-                var output = mustache.render(detailArticleTmpl, blog.toJSON());
-                $("body").append(output);
-
-                lungo.dom("#detail_1_" + blog.id).on('load', function(e){
-                    viewDetail.loadHandler(e);
-                });
-            });
-
-            cache.blogs = blogs;
+  */
 
             lungo.dom('#main-article').on('doubletap', function(event){
                 lungo.Notification.success(
