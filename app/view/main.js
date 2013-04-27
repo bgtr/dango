@@ -57,6 +57,9 @@ define('view/main', [
                         render();
 
                         lungo.Data.Storage.persistent("blogs", blogs);
+                    },
+                    error : function(e){
+                        console.log(e);
                     }
                 });
 
