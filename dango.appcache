@@ -22,7 +22,6 @@ apple-touch-icon-72x72-precomposed.png
 apple-touch-icon-precomposed.png
 apple-touch-icon.png
 CHANGELOG.md
-components/backbonejs
 components/backbonejs/backbone-1.0.0.min.js
 components/jquery/jquery-1.9.1.min.js
 components/lungo/component.json
