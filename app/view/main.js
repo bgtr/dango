@@ -42,11 +42,12 @@ define('view/main', [
                 $.ajax({
                     type : 'get',
                     url : "http://meatcamp.dip.jp/api?" + (new Date()).getMilliseconds(),
-                    dataType : "json",
+                    dataType : "text",
 //                    headers: {
 //                        "pragma": "no-cache"
 //                    },
-                    success : function(json){
+                    success : function(data){
+                        json = JSON.parse(data);
 
                         console.log(json);
                         for (var i = 0; i < json.length; i++) {
