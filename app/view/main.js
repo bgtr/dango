@@ -22,31 +22,19 @@ define('view/main', [
             }
 
             var render = function() {
-                var output = mustache.render(mainArticleTmpl, {blogs:(blogs.toJSON == undefined) ? blogs : blogs.toJSON()});
+                var output = mustache.render(mainArticleTmpl, {blogs:blogs.toJSON()});
                 $(lungo.dom('#main-article')).html(output);
 
-                // localStorage非利用時
-                if (blogs instanceof Blogs) {
-                    blogs.each(function(blog){
-                        var output = mustache.render(detailArticleTmpl, blogs.toJSON());
-                        $("body").append(output);
+                blogs.each(function(blog){
+                    var output = mustache.render(detailArticleTmpl, blog.toJSON());
+                    $("body").append(output);
 
-                        lungo.dom("#detail_1_" + blog.id).on('load', function(e){
-                            viewDetail.loadHandler(e);
-                        });
+                    lungo.dom("#detail_1_" + blog.id).on('load', function(e){
+                        viewDetail.loadHandler(e);
                     });
+                });
 
-                // localStorage利用時
-                } else {
-                    _.each(blogs, function(blog){
-                        var output = mustache.render(detailArticleTmpl, blogs);
-                        $("body").append(output);
-
-                        lungo.dom("#detail_1_" + blog.id).on('load', function(e){
-                            viewDetail.loadHandler(e);
-                        });
-                    });
-                }
+                cache.blogs = blogs;
             }
 
             var update = function() {
@@ -61,7 +49,6 @@ define('view/main', [
 
                     render();
 
-                    cache.blogs = blogs;
                     lungo.Data.Storage.persistent("blogs", blogs);
 
                 }, "json");
@@ -75,6 +62,7 @@ define('view/main', [
                 loading();
                 update();
             } else {
+                blogs = (new Blogs()).add(blogs);
                 render();
             }
 

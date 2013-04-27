@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aa14ca3-0063-4681-901c-89f39f16afef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/detail.html" afterPath="$PROJECT_DIR$/app/template/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/main.article.html" afterPath="$PROJECT_DIR$/app/template/main.article.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/main.html" afterPath="$PROJECT_DIR$/app/template/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/main.js" afterPath="$PROJECT_DIR$/app/view/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dango.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,7 +10,7 @@
     <file path="/main.aside.html" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367009081394" ignored="false" />
     <file path="/main.html" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367024298317" ignored="false" />
     <file path="/main.article.html" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367022342011" ignored="false" />
-    <file path="/main.js" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367027928902" ignored="false" />
+    <file path="/main.js" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367028856709" ignored="false" />
     <file path="/detail.html" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367026370673" ignored="false" />
     <file path="/translate.js" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1366995092415" ignored="false" />
     <file path="/detail.js" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367005591395" ignored="false" />
@@ -41,10 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.aside.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.aside.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/template/main.aside.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="49" selection-start="386" selection-end="386" vertical-scroll-proportion="0.2923538">
+            <state line="10" column="28" selection-start="348" selection-end="348" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -73,7 +69,7 @@
       <file leaf-file-name="detail.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="36" selection-start="316" selection-end="316" vertical-scroll-proportion="-7.5">
+            <state line="13" column="46" selection-start="326" selection-end="326" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -106,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="21" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.0">
+            <state line="28" column="40" selection-start="964" selection-end="964" vertical-scroll-proportion="0.61946905">
               <folding />
             </state>
           </provider>
@@ -458,13 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/main.aside.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/util/translator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
@@ -479,16 +468,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/main.js">
+    <entry file="file://$PROJECT_DIR$/app/template/main.aside.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="21" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.0">
+        <state line="10" column="28" selection-start="348" selection-end="348" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/detail.js">
+    <entry file="file://$PROJECT_DIR$/app/template/main.article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="36" selection-start="316" selection-end="316" vertical-scroll-proportion="-7.5">
+        <state line="14" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/main.aside.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -502,16 +498,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/main.article.html">
+    <entry file="file://$PROJECT_DIR$/app/view/detail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="-8.75">
+        <state line="13" column="46" selection-start="326" selection-end="326" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/main.aside.html">
+    <entry file="file://$PROJECT_DIR$/app/view/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="49" selection-start="386" selection-end="386" vertical-scroll-proportion="0.2923538">
+        <state line="28" column="40" selection-start="964" selection-end="964" vertical-scroll-proportion="0.61946905">
           <folding />
         </state>
       </provider>
