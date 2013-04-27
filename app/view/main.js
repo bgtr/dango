@@ -16,27 +16,19 @@ define('view/main', [
         var view = this;
 
         view.initialize = function() {
-            blogs = new Blogs();
 
             var loading = function () {
                 $(lungo.dom('#main-article')).html('<div class="loading black"><span class="top"></span><span class="right"></span><span class="bottom"></span><span class="left"></span></div>');
             }
 
-            var update = function() {
+            var render = function() {
+                var output = mustache.render(mainArticleTmpl, {blogs:(blogs.toJSON == undefined) ? blogs : blogs.toJSON()});
+                $(lungo.dom('#main-article')).html(output);
 
-                $.get("http://54.248.103.103/", function(json){
-
-                    console.log(json);
-                    for (var i = 0; i < json.length; i++) {
-                        json[i].id = _.uniqueId('blog_');
-                        blogs.add(json[i]);
-                    }
-
-                    var output = mustache.render(mainArticleTmpl, {blogs:blogs.toJSON()});
-                    $(lungo.dom('#main-article')).html(output);
-
+                // localStorage非利用時
+                if (blogs instanceof Blogs) {
                     blogs.each(function(blog){
-                        var output = mustache.render(detailArticleTmpl, blog.toJSON());
+                        var output = mustache.render(detailArticleTmpl, blogs.toJSON());
                         $("body").append(output);
 
                         lungo.dom("#detail_1_" + blog.id).on('load', function(e){
@@ -44,15 +36,47 @@ define('view/main', [
                         });
                     });
 
+                // localStorage利用時
+                } else {
+                    _.each(blogs, function(blog){
+                        var output = mustache.render(detailArticleTmpl, blogs);
+                        $("body").append(output);
+
+                        lungo.dom("#detail_1_" + blog.id).on('load', function(e){
+                            viewDetail.loadHandler(e);
+                        });
+                    });
+                }
+            }
+
+            var update = function() {
+
+                $.get("http://meatcamp.dip.jp/", function(json){
+
+                    console.log(json);
+                    for (var i = 0; i < json.length; i++) {
+                        json[i].id = _.uniqueId('blog_');
+                        blogs.add(json[i]);
+                    }
+
+                    render();
+
                     cache.blogs = blogs;
+                    lungo.Data.Storage.persistent("blogs", blogs);
 
                 }, "json");
 
             }
-            loading();
-            update();
 
+            var blogs = lungo.Data.Storage.persistent("blogs");
 
+            if (blogs == null) {
+                blogs = new Blogs();
+                loading();
+                update();
+            } else {
+                render();
+            }
 
             $("#refresh").on('tap', function(e){
                 loading();

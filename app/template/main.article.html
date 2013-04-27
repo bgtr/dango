@@ -1,13 +1,44 @@
-<li class="dark">
-    <strong>
-        TechCrunch
-    </strong>
-</li>
-{{#blogs}}
+
+    <li class="dark">
+        <strong>
+            TechCrunch
+        </strong>
+    </li>
+    {{#blogs}}
     <li data-icon="brand html5" class="secondary selectable arrow">
         <a href="#detail_1_{{id}}" data-router="section">
             <strong>{{ja_JP.title}}</strong>
             {{ja_JP.body}}
         </a>
     </li>
-{{/blogs}}
+    {{/blogs}}
+
+
+
+<!--section id="main" data-transition="">
+    <header data-title="dango">
+        <nav class="left">
+            <a href="#top-aside" data-router="aside" data-icon="menu"></a>
+        </nav>
+        <nav class="right">
+            <a href="#main" data-icon="refresh" id="refresh"></a>
+        </nav>
+    </header>
+
+    <article id="main-article" class="active list indented scroll">
+        <li class="dark">
+            <strong>
+                TechCrunch
+            </strong>
+        </li>
+        {{#blogs}}
+        <li data-icon="brand html5" class="secondary selectable arrow">
+            <a href="#detail_1_{{id}}" data-router="section">
+                <strong>{{ja_JP.title}}</strong>
+                {{ja_JP.body}}
+            </a>
+        </li>
+        {{/blogs}}
+    </article>
+
+</section-->

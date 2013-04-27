@@ -1,4 +1,4 @@
-<section id="detail_1_{{id}}" data-transition="">
+<section id="detail_1_{{id}}" data-transition="slide">
     <header data-title="aaa">
         <nav class="left">
             <a href="#back" data-router="section" class="icon left"></a>
@@ -9,20 +9,22 @@
         </nav>
     </header>
     <article class="active">
-        <div style="display:block;width:50%;float:left;">
+        <div style="display:block;width:50%;float:left;overflow: auto;">
             <p>
                 <strong>{{ja_JP.title}}</strong>
             </p>
             <p>
-                {{ja_JP.body}}
+                {{#ja_JP.content:encoded:}}
+                    {{.}}
+                {{/ja_JP.content:encoded:}}
             </p>
         </div>
-        <div style="display:block;width:50%;float:left;">
+        <div style="display:block;width:50%;float:left;overflow: auto;">
             <p>
-                <strong>{{en.title}}</strong>
+                <!--strong>{{en.title}}</strong-->
             </p>
             <p>
-                {{en.body}}
+                {{en}}
             </p>
         </div>
     </article>
