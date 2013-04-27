@@ -8,7 +8,7 @@ define('util/translator', [], function () {
 
             translator.play = function(text) {
                 if (translator.voice == undefined) {
-                    var query = "http://tts-api.com/tts.mp3?q=" + text.replace(" ", "+");
+                    var query = "http://tts-api.com/tts.mp3?q=" + text.replaceAll(" ", "+");
                     translator.voice = new Audio(query);
                 }
                 translator.voice.play();
