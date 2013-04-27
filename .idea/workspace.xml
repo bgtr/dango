@@ -78,7 +78,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="22" selection-start="2889" selection-end="2889" vertical-scroll-proportion="-7.875">
+            <state line="57" column="39" selection-start="3214" selection-end="3214" vertical-scroll-proportion="-23.75">
               <folding />
             </state>
           </provider>
@@ -87,7 +87,7 @@
       <file leaf-file-name="dango.appcache" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dango.appcache">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="56" selection-start="134" selection-end="134" vertical-scroll-proportion="0.11792453">
+            <state line="4" column="35" selection-start="50" selection-end="50" vertical-scroll-proportion="0.094339624">
               <folding />
             </state>
           </provider>
@@ -508,14 +508,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="22" selection-start="2889" selection-end="2889" vertical-scroll-proportion="-7.875">
+        <state line="57" column="39" selection-start="3214" selection-end="3214" vertical-scroll-proportion="-23.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dango.appcache">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="56" selection-start="134" selection-end="134" vertical-scroll-proportion="0.11792453">
+        <state line="4" column="35" selection-start="50" selection-end="50" vertical-scroll-proportion="0.094339624">
           <folding />
         </state>
       </provider>
