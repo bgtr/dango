@@ -27,7 +27,7 @@ define('view/detail', [
 
             $(lungo.dom("#" + e.target.id + " header nav a.button")).on('tap', function(e){
                 if ($(e.target).text().indexOf("▶", 0) >= 0) {
-                    translator.play(blog.en.body);
+                    translator.play(blog.en);
                     $(e.target).text(" ‖ ");
                 } else {
                     translator.pause();
