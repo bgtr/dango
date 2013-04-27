@@ -39,7 +39,7 @@ define('view/main', [
 
             var update = function() {
 
-                $.get("http://meatcamp.dip.jp/", function(json){
+                $.get("http://meatcamp.dip.jp/api", function(json){
 
                     console.log(json);
                     for (var i = 0; i < json.length; i++) {
