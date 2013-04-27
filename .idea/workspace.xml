@@ -16,7 +16,7 @@
     <file path="/detail.js" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367005591395" ignored="false" />
     <file path="/blogs.js" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1366999197084" ignored="false" />
     <file path="/translator.js" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367005869016" ignored="false" />
-    <file path="/index.html" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367046254274" ignored="false" />
+    <file path="/index.html" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367046430481" ignored="false" />
     <file path="/main.aside.js" changelist="2aa14ca3-0063-4681-901c-89f39f16afef" time="1367009412001" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +79,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="28" selection-start="4162" selection-end="4162" vertical-scroll-proportion="0.76347303">
+            <state line="69" column="96" selection-start="3923" selection-end="3923" vertical-scroll-proportion="0.6062874">
               <folding />
             </state>
           </provider>
@@ -529,7 +529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="28" selection-start="4162" selection-end="4162" vertical-scroll-proportion="0.76347303">
+        <state line="69" column="96" selection-start="3923" selection-end="3923" vertical-scroll-proportion="0.6062874">
           <folding />
         </state>
       </provider>
