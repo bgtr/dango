@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aa14ca3-0063-4681-901c-89f39f16afef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dango.appcache" afterPath="$PROJECT_DIR$/dango.appcache" />
     </list>
     <ignored path="dango.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,19 +75,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="26" selection-start="3605" selection-end="3605" vertical-scroll-proportion="0.5412844">
+            <state line="53" column="22" selection-start="2889" selection-end="2889" vertical-scroll-proportion="-7.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dango.appcache" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="dango.appcache" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dango.appcache">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
+            <state line="8" column="56" selection-start="134" selection-end="134" vertical-scroll-proportion="0.11792453">
               <folding />
             </state>
           </provider>
@@ -157,8 +157,8 @@
         <option value="$PROJECT_DIR$/app/template/main.html" />
         <option value="$PROJECT_DIR$/app/template/detail.html" />
         <option value="$PROJECT_DIR$/app/view/main.js" />
-        <option value="$PROJECT_DIR$/dango.appcache" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/dango.appcache" />
       </list>
     </option>
   </component>
@@ -497,13 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dango.appcache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/template/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="27" selection-start="361" selection-end="361" vertical-scroll-proportion="-6.875">
@@ -515,7 +508,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="26" selection-start="3605" selection-end="3605" vertical-scroll-proportion="0.5412844">
+        <state line="53" column="22" selection-start="2889" selection-end="2889" vertical-scroll-proportion="-7.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dango.appcache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="56" selection-start="134" selection-end="134" vertical-scroll-proportion="0.11792453">
           <folding />
         </state>
       </provider>
