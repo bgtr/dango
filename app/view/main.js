@@ -41,7 +41,7 @@ define('view/main', [
 
                 $.ajax({
                     type : 'get',
-                    url : "http://meatcamp.dip.jp/api",
+                    url : "http://meatcamp.dip.jp/api?" + (new Date()).getMilliseconds(),
                     dataType : "json",
                     headers: {
                         "pragma": "no-cache"
