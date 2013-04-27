@@ -39,19 +39,26 @@ define('view/main', [
 
             var update = function() {
 
-                $.get("http://meatcamp.dip.jp/api", function(json){
+                $.ajax({
+                    type : 'get',
+                    url : "http://meatcamp.dip.jp/api",
+                    dataType : "json",
+                    headers: {
+                        "pragma": "no-cache"
+                    },
+                    success : function(json){
 
-                    console.log(json);
-                    for (var i = 0; i < json.length; i++) {
-                        json[i].id = _.uniqueId('blog_');
-                        blogs.add(json[i]);
+                        console.log(json);
+                        for (var i = 0; i < json.length; i++) {
+                            json[i].id = _.uniqueId('blog_');
+                            blogs.add(json[i]);
+                        }
+
+                        render();
+
+                        lungo.Data.Storage.persistent("blogs", blogs);
                     }
-
-                    render();
-
-                    lungo.Data.Storage.persistent("blogs", blogs);
-
-                }, "json");
+                });
 
             }
 
