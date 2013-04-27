@@ -43,9 +43,9 @@ define('view/main', [
                     type : 'get',
                     url : "http://meatcamp.dip.jp/api?" + (new Date()).getMilliseconds(),
                     dataType : "json",
-                    headers: {
-                        "pragma": "no-cache"
-                    },
+//                    headers: {
+//                        "pragma": "no-cache"
+//                    },
                     success : function(json){
 
                         console.log(json);
