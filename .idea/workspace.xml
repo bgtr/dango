@@ -87,7 +87,7 @@
       <file leaf-file-name="dango.appcache" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dango.appcache">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="35" selection-start="50" selection-end="50" vertical-scroll-proportion="0.094339624">
+            <state line="46" column="0" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.52200305">
               <folding />
             </state>
           </provider>
@@ -106,15 +106,6 @@
         <entry file="file://$PROJECT_DIR$/app/view/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="32" column="14" selection-start="1147" selection-end="1147" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="translator.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/util/translator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -513,9 +504,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/humans.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dango.appcache">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="50" selection-end="50" vertical-scroll-proportion="0.094339624">
+        <state line="46" column="0" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.52200305">
           <folding />
         </state>
       </provider>
